@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import Logo from './mediesusetlogo.png';
+import routes from '../../Router/routes';
+import Logo from '../../../images/mediesusetlogo.png';
 
-function App() {
+function Nav() {
   return (
     <Navbar>
       <img src={Logo} alt="website logo" className="websitelogo"></img>
@@ -63,4 +64,4 @@ function NavItem(props) {
   )
 }
 
-export default App;
+export default Nav;
