@@ -205,6 +205,12 @@ footer {
   text-align: center;
 }
 
+/* Slider image */
+
+.slider-image {
+  width: 100%;
+}
+
 /* News on home page */
 
 .tac {

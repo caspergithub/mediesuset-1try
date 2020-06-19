@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Slider from '../../../images/slider.png';
 
 export default function Home(props) {
 
@@ -23,6 +24,7 @@ export default function Home(props) {
 
     return (
         <div>
+            <img src={Slider} className="slider-image"></img>
             <h1 className="tac">NYHEDER</h1>
             <div className="news">
                 {
