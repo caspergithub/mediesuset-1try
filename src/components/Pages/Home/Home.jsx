@@ -23,23 +23,26 @@ export default function Home(props) {
     }, [])
 
     return (
-        <div>
+        <div className="main-div">
             <img src={Slider} className="slider-image"></img>
             <h1 className="tac">NYHEDER</h1>
             <div className="news">
                 {
-                    apiData && apiData.slice(0,6).map((items, i) =>
+                    apiData && apiData.slice(0, 6).map((items, i) =>
                         <div key={items.title} className="single-news">
                             <img src={items.image} alt="image-names" className="news-image" />
                             <div className="news-text">
-                            <h3>{items.title}</h3>
-                            <p>{items.teaser}</p>
-                            <button className="read-more">LÆS MERE</button>
+                                <h3>{items.title}</h3>
+                                <div className="textoverflow">
+                                    <p>{items.teaser}</p>
+                                </div>
+                                <button className="read-more">LÆS MERE</button>
                             </div>
                         </div>
                     )
                 }
             </div>
+            <button className="news-archive-link">NYHEDSARKIV</button>
         </div>
     )
 }
