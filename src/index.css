@@ -23,6 +23,8 @@ html {
   --buyticket: #ac324c;
 }
 
+/* Navbar */
+
 ul {
   list-style: none;
   margin: 0;
@@ -185,4 +187,79 @@ a {
   .dropdown {
     top: 194px;
   }
+}
+
+/* Main */
+
+main {
+  margin-bottom: 200px;
+}
+
+/* Footer */
+footer {
+  background-color: #121212;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+/* News on home page */
+
+.tac {
+  text-align: center;
+}
+.news-image {
+  width: 100%;
+  height: 222px;
+}
+.news {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.single-news {
+  background-color: #f4f4f4;
+  padding-bottom: 22px;
+  position: relative;
+}
+
+.news-text {
+  padding: 12px;
+  display: grid;
+}
+
+.read-more {
+  color: #ffffff;
+  background-color: #000000;
+  width: 93%;
+  height: 28px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  background-color: #395f98;
+
+}
+
+.read-more:hover::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  position: absolute;
+  right: 15px;
+  top: 8px;
 }

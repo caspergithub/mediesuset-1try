@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import routes from '../../Router/routes';
 import Logo from '../../../images/mediesusetlogo.png';
+import routes from '../../Router/routes';
 
 function Nav() {
   return (
@@ -18,7 +18,7 @@ function Nav() {
       <li className="nav-item"><a href="#" className="topnav-button">CAMPS</a></li>
       <li className="nav-item"><a href="#" className="topnav-button">PRAKTISK INFO</a></li>
       <li className="nav-item"><a href="#" className="topnav-button">LOGIN</a></li>
-      <li className="nav-item"><a href="#" className="topnav-button">SEARCH</a></li>
+      <li className="nav-item"><a href="#" className="topnav-button fa fa-search"></a></li>
     </Navbar>
   );
 }
