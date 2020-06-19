@@ -198,21 +198,11 @@ a {
 /* Main */
 
 main {
-  margin-bottom: 200px;
+  margin-bottom: 1020px;
 }
 
 h3 {
   margin: 0;
-}
-
-/* Footer */
-footer {
-  background-color: #121212;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  color: #f2f2f2;
-  text-align: center;
 }
 
 /* Slider image */
@@ -253,14 +243,18 @@ footer {
 .textoverflow {
   height: 150px;
   overflow: hidden;
+  position: relative;
 }
 
 .textoverflow::before {
   content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 150px;
   width: 100%;
-  background-color: red;
-  z-index: 1;
+  background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(242,242,242,1) 7%, rgba(242,242,242,0) 45%);
 }
 
 .read-more {
@@ -323,4 +317,64 @@ footer {
   border: none;
   color: #fff;
   cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+  background-color: #121212;
+  background-image: url(../src/images/slider.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 22px 0;
+}
+
+/* social media logos */
+
+.smlogos {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 22px;
+  margin-bottom: 125px;
+}
+
+.smlogo {
+  width: 75px;
+  height: 75px;
+}
+
+.footerform {
+  border: 1px solid #f2f2f2b4;
+  max-width: 500px;
+  margin: auto;
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 125px;
+}
+
+.indtast {
+  background-color: #00000000;
+  border: none;
+  height: 22px;
+}
+
+.tilmeld {
+  border: none;
+  background-color: #cf404cc5;
+  color: #fff;
+}
+
+.fontcursive {
+  font-family: cursive;
+  color: #d4b367;
+  font-size: 35px;
 }
